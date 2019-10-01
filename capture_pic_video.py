@@ -19,25 +19,25 @@ import time
 import cv2
  
 # initialize the camera and grab a reference to the raw camera capture
-camera = PiCamera()
-rawCapture = PiRGBArray(camera)
+camera = PiCamera() # camera
+rawCapture = PiRGBArray(camera) # storage
  
 # allow the camera to warmup
-time.sleep(0.1)
+time.sleep(0.1) # warm up
  
 # grab an image from the camera
-camera.capture(rawCapture, format="bgr")
+camera.capture(rawCapture, format="bgr") # take photos
 #ensure our image is in BGR format rather than RGB.
 # OpenCV represents images as NumPy arrays in BGR order rather than RGB
-image = rawCapture.array
+image = rawCapture.array # take out from storage
  
 # display the image on screen and wait for a keypress
-cv2.imshow("Image", image)
-cv2.waitKey(0)
+cv2.imshow("Image", image) # show 
+cv2.waitKey(0) #quit
 
 
 # use picameera to capture vedio:
-cessing the Raspberry Pi Camera with OpenCV and PythonPython
+# rcessing the Raspberry Pi Camera with OpenCV and PythonPython
 # import the necessary packages
 from picamera.array import PiRGBArray
 from picamera import PiCamera
@@ -46,6 +46,7 @@ import cv2
 
 # initialize the camera and grab a reference to the raw camera capture
 camera = PiCamera()
+#setting 
 camera.resolution = (640, 480)
 camera.framerate = 32
 # fps : frame per second 
