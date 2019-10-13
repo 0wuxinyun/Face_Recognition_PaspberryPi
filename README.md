@@ -19,3 +19,6 @@ go to cv env
 I ASSUME U DOWNLOAD THE OPENCV [opencv download tutorial](https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/)
 
 >3: use it 
+
+# another one use  DL:
+data set: [data](https://github.com/alpha-13/Face-Recognition.git:)
